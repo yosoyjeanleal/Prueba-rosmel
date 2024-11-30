@@ -128,10 +128,13 @@ section h2 {
 }
 
 .footer {
+    
+    position :relative;
     background: #1d0e95;
     color: white;
     text-align: center;
     padding: 10px;
+    position: relative; 
 }
 
 ul {
@@ -171,6 +174,7 @@ ul li a:hover {
 
     .footer {
         padding: 20px;
+        position: relative;
     }
 }
 
@@ -333,7 +337,7 @@ section {
 }
 
 h2 {
-    color: #7030A0;
+    color: #1d0e95;
     font-size: 28px;
 }
 
@@ -341,6 +345,18 @@ p {
     line-height: 1.6;
 }
 
+.historical-review, .biography, .mission-vision {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.historical-review h2, .biography h2, .mission-vision h2 {
+    color: #1d0e95;
+    margin-bottom: 10px;
+}
 .download-section {
     text-align: center;
 }
@@ -355,3 +371,113 @@ p {
     display: inline-block;
     margin-top: 20px;
 }
+
+/* Eventos */
+.events-section {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+.events-section h2 {
+    color: #1d0e95;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.event {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.event:last-child {
+    border-bottom: none;
+}
+
+.event h3 {
+    color: #d10404;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.event p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .events-section {
+        padding: 15px;
+    }
+
+    .events-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .event h3 {
+        font-size: 1.3rem;
+    }
+
+    .event p {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* General */
+.sobre {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.sobre h2 {
+    color: #1d0e95;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.sobre p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+
+.responsive-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .sobre {
+        padding: 15px;
+    }
+
+    .sobre h2 {
+        font-size: 20px;
+    }
+
+    .sobre p {
+        font-size: 14px;
+    }
+
+    .responsive-img {
+        margin: 10px 0;
+    }
+}
+
+
